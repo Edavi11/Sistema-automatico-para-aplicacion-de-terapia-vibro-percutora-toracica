@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ESP Input Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="row justify-content-center">
+        <div class="col">
+            <form action="/get">
+                 <br>
+                  <select class="custom-select" name="input4">
+                    <option value="1" selected>Todas las zonas</option>
+                    <option value="2">Trapecios(zona superior)</option>
+                    <option value="3">Dorsales(zona media)</option>  
+                    <option value="4">Lumbares(zona inferior)</option>
+                 </select>
+                 <br>
+                  <select class="custom-select" name="input5">
+                    <option value="0" selected>Tiempo indefinido</option>
+                    <option value="3">5 minutos</option>
+                    <option value="6">10 minutos</option>  
+                    <option value="9">15 minutos</option>
+                 </select>
+                 <br>
+                 <select class="custom-select" name="input1">
+                    <option value="M">Masculino</option> 
+                    <option value="F" selected>Femenino</option>
+                 </select>
+                <br>
+                <select class="custom-select" name="input3">
+                    <option value="1">1.60 mts o menos</option>
+                    <option value="2">1.60-1.80 mts</option>  
+                    <option value="3">1.80 mts o mas</option>
+                 </select>
+                 <br>
+                <input class="form-control" placeholder="EDAD" type="text" name="input2">
+                <br>
+                
+                <input class="btn btn-primary" type="submit" value="SEND">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
